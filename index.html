@@ -842,7 +842,7 @@
             const discountInfo = document.getElementById('discountInfo');
             if (websiteDiscount > 0 || servicesDiscount > 0) {
                 const maxDiscount = Math.max(websiteDiscount, servicesDiscount);
-                const daysUntilNextWeek = 6 - now.getDay();
+                const daysUntilNextWeek = 7 - now.getDay();
                 discountInfo.textContent = `Aktuelle Rabatte bis zu ${maxDiscount}% - Noch ${daysUntilNextWeek} Tage gültig!`;
             } else {
                 discountInfo.textContent = 'Aktuell keine Rabatte - Nächste Woche neue Angebote!';
